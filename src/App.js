@@ -1,6 +1,7 @@
 import './App.css';
 import Converter from './components/state/Converter';
 import Counter from './components/state/Counter';
+import FilterableList from './components/state/FilterableList';
 import Form from './form';
 import Heading from './Heading';
 import Trainer from './Trainer';
@@ -9,13 +10,14 @@ function App() {
   return (
     <div className="App">
       <Heading/>
-      <Counter/>
+      <FilterableList/>
+      {/* <Counter/>
       <br/>
       <Converter/>
-      {/* <Trainer name="Jordan H" age={28} specialism="Software"/>
+      <Trainer name="Jordan H" age={28} specialism="Software"/>
       <Trainer name="Piers B" age={24} specialism="Weaponisation"/>
-      <Trainer name="Ed" age={26} specialism="SDET"/> */}
-      {/* <Trainer/> */}
+      <Trainer name="Ed" age={26} specialism="SDET"/>
+      <Trainer/> */}
     </div>
   );
 }
