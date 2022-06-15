@@ -1,9 +1,10 @@
 import { useState } from "react";
+import Trainer from "../../Trainer";
 
 import Data from "./Data.json";
 
-const FilterableList = () => {
-    const { trainers } = Data;
+const FilterableListFull = () => {
+    const { trainersFull } = Data;
     const [search, setSearch] = useState("");
 
     // const filtered = [];
@@ -12,9 +13,9 @@ const FilterableList = () => {
     //     if (trainer.toLowerCase().startsWith(search.toLowerCase())) filtered.push(trainer);
     // }
 
-    const renderedTrainers = trainers
-                                .filter(trainer => trainer.toLowerCase().startsWith(search.toLowerCase()))
-                                 .map(trainer => <p>{trainer}</p>);
+    const renderedTrainers = trainersFull
+                                .filter(trainer => trainer.name.toLowerCase().startsWith(search.toLowerCase()))
+                                .map(trainer => <Trainer key={trainer.name + trainer.age} name={trainer.name} age={trainer.age} specialism={trainer.specialism}/>);
 
     return ( 
         <div>
@@ -25,4 +26,4 @@ const FilterableList = () => {
      );
 }
 
-export default FilterableList;
+export default FilterableListFull;

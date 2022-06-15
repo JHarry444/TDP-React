@@ -2,6 +2,7 @@ import './App.css';
 import Converter from './components/state/Converter';
 import Counter from './components/state/Counter';
 import FilterableList from './components/state/FilterableList';
+import FilterableListFull from './components/state/FilterableListFull';
 import Form from './form';
 import Heading from './Heading';
 import Trainer from './Trainer';
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Heading/>
-      <FilterableList/>
+      <FilterableListFull/>
       {/* <Counter/>
       <br/>
       <Converter/>

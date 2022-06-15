@@ -1,0 +1,27 @@
+{
+    "trainers": [
+        "JH",
+        "JB",
+        "ER",
+        "AS",
+        "PB",
+        "CY"
+    ],
+    "trainersFull": [
+        {
+            "name": "Jordan H",
+            "age": 28,
+            "specialism": "Shenanigans"
+        },
+        {
+            "name": "Aswene",
+            "age": 25,
+            "specialism": "Software"
+        },
+        {
+            "name": "Jordan B",
+            "age": 26,
+            "specialism": "SDET"
+        }
+    ]
+}
