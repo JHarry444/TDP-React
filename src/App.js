@@ -1,4 +1,5 @@
 import './App.css';
+import Trainers from './components/apis/Trainers';
 import Converter from './components/state/Converter';
 import Counter from './components/state/Counter';
 import FilterableList from './components/state/FilterableList';
@@ -11,7 +12,8 @@ function App() {
   return (
     <div className="App">
       <Heading/>
-      <FilterableListFull/>
+      <Trainers/>
+      {/* <FilterableListFull/> */}
       {/* <Counter/>
       <br/>
       <Converter/>
